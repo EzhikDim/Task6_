@@ -13,14 +13,11 @@ public class Main {
         System.out.println("Введите e:");
         double e = in.nextDouble();
         double s1 = 1, s = 1, s2 = 1, s3 = 1, fakt = 1, fakt1 = 2, sv = 2;
-        s1 = sum(x, n, s1, s, fakt, fakt1, sv);
-        s2 = sume(x, e, n, s2, s, fakt, fakt1, sv);
-        s3 = sume10(x, e, n, s3, s, fakt, fakt1, sv);
         double fun;
         fun = 1/Math.sqrt(1-Math.pow(x, 2));
-        System.out.print("Сумма " + n + " слагаемых ряда = " + s1 + "\n");
-        System.out.print("Сумма слагаемых > е = " + s2 + "\n");
-        System.out.print("Сумма слагаемых > больше е/10 = " + s3 + "\n");
+        System.out.print("Сумма " + n + " слагаемых ряда = " + sum(x, n, s1, s, fakt, fakt1, sv) + "\n");
+        System.out.print("Сумма слагаемых > е = " + sume(x, e, n, s2, s, fakt, fakt1, sv) + "\n");
+        System.out.print("Сумма слагаемых > больше е/10 = " + sume10(x, e, n, s3, s, fakt, fakt1, sv) + "\n");
         System.out.print("Значение функции = " + fun + "\n");
     }
 
